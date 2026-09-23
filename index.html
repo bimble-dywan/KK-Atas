@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Master Modul Matematika Level 2 (Kelas Atas) - Dywan Learning Center</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        @media print {
+            .no-print { display: none !important; }
+            .print-only { display: block !important; }
+            body { background: white; color: black; }
+            .page-break { page-break-after: always; }
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+
+    <!-- Top Navigation Bar (Hijau Gelap) -->
+    <header class="no-print sticky top-0 z-50 bg-emerald-900 text-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <span class="bg-emerald-700 px-3 py-1.5 rounded-lg font-bold text-sm tracking-wider">DLC</span>
+                <div>
+                    <h1 class="font-bold text-lg leading-tight">Dywan Learning Center</h1>
+                    <p class="text-xs text-emerald-200">Master Modul Kurikulum Matematika Level 2 (Kelas 4 - 6 SD)</p>
+                </div>
+            </div>
+            <div class="flex items-center space-x-3">
+                <a href="#daftar-isi" class="bg-emerald-800 hover:bg-emerald-700 text-emerald-100 px-3 py-2 rounded-lg text-xs font-semibold transition">
+                    Daftar Isi
+                </a>
+                <button onclick="window.print()" class="bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2 rounded-lg text-sm font-semibold transition flex items-center space-x-2 shadow">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"></path></svg>
+                    <span>Cetak / PDF</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="max-w-5xl mx-auto px-4 py-8 space-y-12" id="atas">
+
+        <!-- COVER MODULE -->
+        <section class="bg-white rounded-2xl shadow-xl border border-slate-200 p-8 md:p-16 text-center space-y-8 page-break">
+            <div class="inline-block bg-emerald-50 text-emerald-700 font-bold px-4 py-1.5 rounded-full text-sm">
+                KURIKULUM BIMBEL KELAS ATAS
+            </div>
+            <div class="space-y-4">
+                <h1 class="text-3xl md:text-5xl font-extrabold text-slate-900 tracking-tight">
+                    MASTER MODUL MATEMATIKA
+                </h1>
+                <h2 class="text-xl md:text-2xl font-bold text-emerald-600">
+                    LEVEL 2: KELAS ATAS (KELAS 4 – 6 SD)
+                </h2>
+                <p class="text-slate-500 max-w-2xl mx-auto text-sm md:text-base">
+                    Penguatan Operasi Hitung Lanjut, Pecahan, Rasio, Geometri Ruang, dan Problem Solving berbasis metode <strong>I Do – We Do – You Do</strong>[cite: 2].
+                </p>
+            </div>
+
+            <div class="pt-8 border-t border-slate-100 grid grid-cols-1 md:grid-cols-3 gap-6 text-left text-sm">
+                <div class="bg-slate-50 p-4 rounded-xl border border-slate-200">
+                    <p class="font-bold text-slate-900">Lembaga:</p>
+                    <p class="text-slate-600">Dywan Learning Center</p>
+                    <p class="text-slate-500 text-xs mt-1">Kedungjati</p>
+                </div>
+                <div class="bg-slate-50 p-4 rounded-xl border border-slate-200">
+                    <p class="font-bold text-slate-900">Tim Pengajar:</p>
+                    <p class="text-slate-600">Bravura Auriga D., S.Kom. Gr.<br>Almahida Aureola D., S.Pd. Gr.<br>Adil Aurora D., S.Pd.</p>
+                </div>
+                <div class="bg-slate-50 p-4 rounded-xl border border-slate-200">
+                    <p class="font-bold text-slate-900">Karakteristik Kelas:</p>
+                    <p class="text-slate-600">Kelompok Kecil (Maks. 6 siswa per sesi dengan pendekatan berdiferensiasi).</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- DAFTAR ISI & PENGANTAR (INTERAKTIF) -->
+        <section id="daftar-isi" class="bg-white rounded-2xl shadow-xl border border-slate-200 p-8 md:p-12 space-y-6 page-break">
+            <h3 class="text-2xl font-bold text-slate-900 border-b pb-3">Daftar Isi & Peta Kurikulum Level 2</h3>
+            <p class="text-xs text-slate-500">Klik salah satu unit di bawah untuk langsung menuju materi yang diinginkan:</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm">
+                <!-- Level 2A -->
+                <div class="bg-slate-50 p-5 rounded-xl border border-slate-200 space-y-3">
+                    <h4 class="font-bold text-emerald-700 border-b border-emerald-100 pb-2">LEVEL 2A (Kelas 4–5 SD)</h4>
+                    <ul class="space-y-2 text-slate-700">
+                        <li><a href="#unit-2a-1" class="hover:text-emerald-600 hover:underline flex items-center justify-between"><span><strong>Unit 2A.1:</strong> Bilangan & Nilai Tempat</span> <span class="text-xs bg-emerald-100 text-emerald-700 px-2 py-0.5 rounded">Buka &rarr;</span></a></li>
+                        <li><a href="#unit-2a-2" class="hover:text-emerald-600 hover:underline flex items-center justify-between"><span><strong>Unit 2A.2:</strong> Operasi Hitung & Porogapit</span> <span class="text-xs bg-emerald-100 text-emerald-700 px-2 py-0.5 rounded">Buka &rarr;</span></a></li>
+                        <li><a href="#unit-2a-3" class="hover:text-emerald-600 hover:underline flex items-center justify-between"><span><strong>Unit 2A.3:</strong> Faktor, Kelipatan, FPB, KPK</span> <span class="text-xs bg-emerald-100 text-emerald-700 px-2 py-0.5 rounded">Buka &rarr;</span></a></li>
+                        <li><a href="#unit-2a-4" class="hover:text-emerald-600 hover:underline flex items-center justify-between"><span><strong>Unit 2A.4:</strong> Pecahan Dasar & Menengah</span> <span class="text-xs bg-emerald-100 text-emerald-700 px-2 py-0.5 rounded">Buka &rarr;</span></a></li>
+                        <li><a href="#unit-2a-5" class="hover:text-emerald-600 hover:underline flex items-center justify-between"><span><strong>Unit 2A.5:</strong> Desimal & Persen</span> <span class="text-xs bg-emerald-100 text-emerald-700 px-2 py-0.5 rounded">Buka &rarr;</span></a></li>
+                        <li><a href="#unit-2a-6" class="hover:text-emerald-600 hover:underline flex items-center justify-between"><span><strong>Unit 2A.6:</strong> Pengukuran Lanjutan</span> <span class="text-xs bg-emerald-100 text-emerald-700 px-2 py-0.5 rounded">Buka &rarr;</span></a></li>
+                        <li><a href="#unit-2a-7" class="hover:text-emerald-600 hover:underline flex items-center justify-between"><span><strong>Unit 2A.7:</strong> Geometri Bidang</span> <span class="text-xs bg-emerald-100 text-emerald-700 px-2 py-0.5 rounded">Buka &rarr;</span></a></li>
+                        <li><a href="#unit-2a-8" class="hover:text-emerald-600 hover:underline flex items-center justify-between"><span><strong>Unit 2A.8:</strong> Geometri Ruang & Volume</span> <span class="text-xs bg-emerald-100 text-emerald-700 px-2 py-0.5 rounded">Buka &rarr;</span></a></li>
+                        <li><a href="#unit-2a-9" class="hover:text-emerald-600 hover:underline flex items-center justify-between"><span><strong>Unit 2A.9:</strong> Data & Penyajian Data</span> <span class="text-xs bg-emerald-100 text-emerald-700 px-2 py-0.5 rounded">Buka &rarr;</span></a></li>
+                        <li><a href="#unit-2a-10" class="hover:text-emerald-600 hover:underline flex items-center justify-between"><span><strong>Unit 2A.10:</strong> Soal Cerita & Problem Solving</span> <span class="text-xs bg-emerald-100 text-emerald-700 px-2 py-0.5 rounded">Buka &rarr;</span></a></li>
+                    </ul>
+                </div>
+
+                <!-- Level 2B -->
+                <div class="bg-slate-50 p-5 rounded-xl border border-slate-200 space-y-3">
+                    <h4 class="font-bold text-emerald-700 border-b border-emerald-100 pb-2">LEVEL 2B (Kelas 6 SD)</h4>
+                    <ul class="space-y-2 text-slate-700">
+                        <li><a href="#unit-2b-1" class="hover:text-emerald-600 hover:underline flex items-center justify-between"><span><strong>Unit 2B.1:</strong> Konsolidasi Bilangan & Operasi</span> <span class="text-xs bg-emerald-100 text-emerald-700 px-2 py-0.5 rounded">Buka &rarr;</span></a></li>
+                        <li><a href="#unit-2b-2" class="hover:text-emerald-600 hover:underline flex items-center justify-between"><span><strong>Unit 2B.2:</strong> Pecahan, Desimal, Persen Lanjut</span> <span class="text-xs bg-emerald-100 text-emerald-700 px-2 py-0.5 rounded">Buka &rarr;</span></a></li>
+                        <li><a href="#unit-2b-3" class="hover:text-emerald-600 hover:underline flex items-center justify-between"><span><strong>Unit 2B.3:</strong> FPB & KPK Problem Solving</span> <span class="text-xs bg-emerald-100 text-emerald-700 px-2 py-0.5 rounded">Buka &rarr;</span></a></li>
+                        <li><a href="#unit-2b-4" class="hover:text-emerald-600 hover:underline flex items-center justify-between"><span><strong>Unit 2B.4:</strong> Perbandingan & Rasio</span> <span class="text-xs bg-emerald-100 text-emerald-700 px-2 py-0.5 rounded">Buka &rarr;</span></a></li>
+                        <li><a href="#unit-2b-5" class="hover:text-emerald-600 hover:underline flex items-center justify-between"><span><strong>Unit 2B.5:</strong> Skala & Denah</span> <span class="text-xs bg-emerald-100 text-emerald-700 px-2 py-0.5 rounded">Buka &rarr;</span></a></li>
+                        <li><a href="#unit-2b-6" class="hover:text-emerald-600 hover:underline flex items-center justify-between"><span><strong>Unit 2B.6:</strong> Kecepatan & Debit</span> <span class="text-xs bg-emerald-100 text-emerald-700 px-2 py-0.5 rounded">Buka &rarr;</span></a></li>
+                        <li><a href="#unit-2b-7" class="hover:text-emerald-600 hover:underline flex items-center justify-between"><span><strong>Unit 2B.7:</strong> Geometri Bidang & Luas Gabungan</span> <span class="text-xs bg-emerald-100 text-emerald-700 px-2 py-0.5 rounded">Buka &rarr;</span></a></li>
+                        <li><a href="#unit-2b-8" class="hover:text-emerald-600 hover:underline flex items-center justify-between"><span><strong>Unit 2B.8:</strong> Bangun Ruang & Volume Kompleks</span> <span class="text-xs bg-emerald-100 text-emerald-700 px-2 py-0.5 rounded">Buka &rarr;</span></a></li>
+                        <li><a href="#unit-2b-9" class="hover:text-emerald-600 hover:underline flex items-center justify-between"><span><strong>Unit 2B.9:</strong> Data & Statistika Dasar</span> <span class="text-xs bg-emerald-100 text-emerald-700 px-2 py-0.5 rounded">Buka &rarr;</span></a></li>
+                        <li><a href="#unit-2b-10" class="hover:text-emerald-600 hover:underline flex items-center justify-between"><span><strong>Unit 2B.10:</strong> Koordinat & Representasi Visual</span> <span class="text-xs bg-emerald-100 text-emerald-700 px-2 py-0.5 rounded">Buka &rarr;</span></a></li>
+                        <li><a href="#unit-2b-11" class="hover:text-emerald-600 hover:underline flex items-center justify-between"><span><strong>Unit 2B.11:</strong> Problem Solving Multi-Langkah</span> <span class="text-xs bg-emerald-100 text-emerald-700 px-2 py-0.5 rounded">Buka &rarr;</span></a></li>
+                        <li><a href="#unit-2b-12" class="hover:text-emerald-600 hover:underline flex items-center justify-between"><span><strong>Unit 2B.12:</strong> Review & Persiapan TKA</span> <span class="text-xs bg-emerald-100 text-emerald-700 px-2 py-0.5 rounded">Buka &rarr;</span></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mt-4 p-4 bg-amber-50 border border-amber-200 rounded-xl text-xs text-amber-900 flex justify-between items-center">
+                <span><strong>Filosofi Pengajaran:</strong> Memahami konsep melalui urutan: Konsep -> Representasi -> Prosedur -> Latihan -> Penerapan -> Problem Solving[cite: 2].</span>
+                <a href="#evaluasi" class="text-emerald-700 font-bold underline whitespace-nowrap ml-2">Ke Tabel Evaluasi &darr;</a>
+            </div>
+        </section>
+
+        <!-- LEVEL 2A UNITS -->
+        <section class="space-y-8">
+            <div class="bg-emerald-900 text-white p-6 rounded-2xl shadow-lg">
+                <span class="bg-emerald-700 px-3 py-1 rounded text-xs font-bold tracking-wider">LEVEL 2A</span>
+                <h2 class="text-2xl font-extrabold mt-2">Kelas 4 – 5 SD: Penguatan Operasi & Konsep Menengah</h2>
+                <p class="text-emerald-200 text-sm mt-1">Fokus pada kelancaran operasi hitung, pecahan, desimal, FPB/KPK, dan geometri dasar.</p>
+            </div>
+
+            <!-- UNIT 2A.1 -->
+            <div id="unit-2a-1" class="bg-white rounded-2xl shadow-xl border border-slate-200 p-8 space-y-6 scroll-mt-20">
+                <div class="flex justify-between items-center border-b pb-4">
+                    <h3 class="text-xl font-bold text-slate-900">Unit 2A.1: Bilangan & Nilai Tempat Lanjutan</h3>
+                    <div class="flex items-center space-x-2">
+                        <span class="bg-slate-100 text-slate-700 text-xs px-3 py-1 rounded-full font-semibold">Kelas 4–5</span>
+                        <a href="#daftar-isi" class="text-xs text-emerald-600 hover:underline bg-emerald-50 px-2 py-1 rounded">&uarr; Menu Utama</a>
+                    </div>
+                </div>
+                <div class="space-y-4 text-sm">
+                    <div class="bg-emerald-50 border-l-4 border-emerald-600 p-4 rounded-r-xl">
+                        <h4 class="font-bold text-emerald-900 mb-1">A. I DO (Konsep & Penjelasan Mentor)</h4>
+                        <p class="text-emerald-800">Membaca, menulis, membandingkan, dan melakukan pembulatan/estimasi pada bilangan besar (jutaan hingga miliaran) dalam konteks nyata.</p>
+                    </div>
+                    <div class="bg-slate-50 border-l-4 border-slate-600 p-4 rounded-r-xl space-y-3">
+                        <h4 class="font-bold text-slate-900">B. WE DO & C. YOU DO (Diferensiasi)</h4>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
+                            <div class="bg-white p-3 rounded border border-slate-200"><span class="font-bold text-emerald-600 block mb-1">Basic</span><p>Bulatkan angka 48.350 ke puluhan ribu terdekat!</p></div>
+                            <div class="bg-white p-3 rounded border border-slate-200"><span class="font-bold text-teal-600 block mb-1">Developing</span><p>Estimasi hasil penjumlahan 4.820 + 3.190 sebelum menghitung eksak.</p></div>
+                            <div class="bg-white p-3 rounded border border-slate-200"><span class="font-bold text-amber-600 block mb-1">Challenge</span><p>Analisis kewajaran hasil kalkulasi dalam studi kasus belanja perusahaan.</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- UNIT 2A.2 -->
+            <div id="unit-2a-2" class="bg-white rounded-2xl shadow-xl border border-slate-200 p-8 space-y-6 scroll-mt-20">
+                <div class="flex justify-between items-center border-b pb-4">
+                    <h3 class="text-xl font-bold text-slate-900">Unit 2A.2: Operasi Hitung Bilangan & Porogapit</h3>
+                    <div class="flex items-center space-x-2">
+                        <span class="bg-slate-100 text-slate-700 text-xs px-3 py-1 rounded-full font-semibold">Kelas 4–5</span>
+                        <a href="#daftar-isi" class="text-xs text-emerald-600 hover:underline bg-emerald-50 px-2 py-1 rounded">&uarr; Menu Utama</a>
+                    </div>
+                </div>
+                <div class="space-y-4 text-sm">
+                    <div class="bg-emerald-50 border-l-4 border-emerald-600 p-4 rounded-r-xl">
+                        <h4 class="font-bold text-emerald-900 mb-1">A. I DO (Konsep & Penjelasan Mentor)</h4>
+                        <p class="text-emerald-800">Penguatan operasi campuran dan teknik pembagian bersusun (porogapit) secara bertahap. Memahami hubungan erat perkalian ↔ pembagian.</p>
+                    </div>
+                    <div class="bg-slate-50 border-l-4 border-slate-600 p-4 rounded-r-xl space-y-3">
+                        <h4 class="font-bold text-slate-900">B. WE DO & C. YOU DO (Diferensiasi)</h4>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
+                            <div class="bg-white p-3 rounded border border-slate-200"><span class="font-bold text-emerald-600 block mb-1">Basic</span><p>Hitung 432 : 4 menggunakan porogapit bertahap.</p></div>
+                            <div class="bg-white p-3 rounded border border-slate-200"><span class="font-bold text-teal-600 block mb-1">Developing</span><p>Selesaikan operasi hitung campuran: 150 + 25 x 4 - 50.</p></div>
+                            <div class="bg-white p-3 rounded border border-slate-200"><span class="font-bold text-amber-600 block mb-1">Challenge</span><p>Temukan dan perbaiki kesalahan pada pengerjaan porogapit yang disediakan mentor.</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- UNIT 2A.3 -->
+            <div id="unit-2a-3" class="bg-white rounded-2xl shadow-xl border border-slate-200 p-8 space-y-6 scroll-mt-20">
+                <div class="flex justify-between items-center border-b pb-4">
+                    <h3 class="text-xl font-bold text-slate-900">Unit 2A.3: Faktor, Kelipatan, FPB, & KPK</h3>
+                    <div class="flex items-center space-x-2">
+                        <span class="bg-slate-100 text-slate-700 text-xs px-3 py-1 rounded-full font-semibold">Kelas 4–5</span>
+                        <a href="#daftar-isi" class="text-xs text-emerald-600 hover:underline bg-emerald-50 px-2 py-1 rounded">&uarr; Menu Utama</a>
+                    </div>
+                </div>
+                <div class="space-y-4 text-sm">
+                    <div class="bg-emerald-50 border-l-4 border-emerald-600 p-4 rounded-r-xl">
+                        <h4 class="font-bold text-emerald-900 mb-1">A. I DO (Konsep & Penjelasan Mentor)</h4>
+                        <p class="text-emerald-800">Menentukan faktor, kelipatan, bilangan prima, faktorisasi, serta aplikasi FPB dan KPK dalam masalah jadwal berulang atau pembagian kelompok.</p>
+                    </div>
+                    <div class="bg-slate-50 border-l-4 border-slate-600 p-4 rounded-r-xl space-y-3">
+                        <h4 class="font-bold text-slate-900">B. WE DO & C. YOU DO (Diferensiasi)</h4>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
+                            <div class="bg-white p-3 rounded border border-slate-200"><span class="font-bold text-emerald-600 block mb-1">Basic</span><p>Tentukan faktor dari 24 dan kelipatan persekutuan dari 3 dan 4.</p></div>
+                            <div class="bg-white p-3 rounded border border-slate-200"><span class="font-bold text-teal-600 block mb-1">Developing</span><p>Cari FPB dan KPK dari 36 dan 48 menggunakan pohon faktor.</p></div>
+                            <div class="bg-white p-3 rounded border border-slate-200"><span class="font-bold text-amber-600 block mb-1">Challenge</span><p>Pecahkan soal cerita lampu menyala bersamaan dengan interval waktu berbeda.</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- UNIT 2A.4 -->
+            <div id="unit-2a-4" class="bg-white rounded-2xl shadow-xl border border-slate-200 p-8 space-y-6 scroll-mt-20">
+                <div class="flex justify-between items-center border-b pb-4">
+                    <h3 class="text-xl font-bold text-slate-900">Unit 2A.4: Pecahan Dasar hingga Menengah</h3>
+                    <div class="flex items-center space-x-2">
+                        <span class="bg-slate-100 text-slate-700 text-xs px-3 py-1 rounded-full font-semibold">Kelas 4–5</span>
+                        <a href="#daftar-isi" class="text-xs text-emerald-600 hover:underline bg-emerald-50 px-2 py-1 rounded">&uarr; Menu Utama</a>
+                    </div>
+                </div>
+                <div class="space-y-4 text-sm">
+                    <div class="bg-emerald-50 border-l-4 border-emerald-600 p-4 rounded-r-xl">
+                        <h4 class="font-bold text-emerald-900 mb-1">A. I DO (Konsep & Penjelasan Mentor)</h4>
+                        <p class="text-emerald-800">Pecahan senilai, menyederhanakan, membandingkan, serta operasi hitung pecahan (penjumlahan, pengurangan, perkalian, pembagian) dengan representasi visual.</p>
+                    </div>
+                    <div class="bg-slate-50 border-l-4 border-slate-600 p-4 rounded-r-xl space-y-3">
+                        <h4 class="font-bold text-slate-900">B. WE DO & C. YOU DO (Diferensiasi)</h4>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
+                            <div class="bg-white p-3 rounded border border-slate-200"><span class="font-bold text-emerald-600 block mb-1">Basic</span><p>Sederhanakan pecahan 18/24 dan cari pecahan senilainya.</p></div>
+                            <div class="bg-white p-3 rounded border border-slate-200"><span class="font-bold text-teal-600 block mb-1">Developing</span><p>Hitung 2/3 + 3/4 menggunakan penyebut yang disamakan.</p></div>
+                            <div class="bg-white p-3 rounded border border-slate-200"><span class="font-bold text-amber-600 block mb-1">Challenge</span><p>Selesaikan perkalian dan pembagian pecahan campuran kompleks.</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- UNIT 2A.5 -->
+            <div id="unit-2a-5" class="bg-white rounded-2xl shadow-xl border border-slate-200 p-8 space-y-6 scroll-mt-20">
+                <div class="flex justify-between items-center border-b pb-4">
+                    <h3 class="text-xl font-bold text-slate-900">Unit 2A.5: Desimal & Persen</h3>
+                    <div class="flex items-center space-x-2">
+                        <span class="bg-slate-100 text-slate-700 text-xs px-3 py-1 rounded-full font-semibold">Kelas 4–5</span>
+                        <a href="#daftar-isi" class="text-xs text-emerald-600 hover:underline bg-emerald-50 px-2 py-1 rounded">&uarr; Menu Utama</a>
+                    </div>
+                </div>
+                <div class="space-y-4 text-sm">
+                    <div class="bg-emerald-50 border-l-4 border-emerald-600 p-4 rounded-r-xl">
+                        <h4 class="font-bold text-emerald-900 mb-1">A. I DO</h4>
+                        <p class="text-emerald-800">Hubungan pecahan, desimal, dan persen. Penerapan dalam diskon belanja dan survei.</p>
+                    </div>
+                    <div class="bg-slate-50 border-l-4 border-slate-600 p-4 rounded-r-xl">
+                        <h4 class="font-bold text-slate-900">B. WE DO & C. YOU DO</h4>
+                        <p class="text-slate-700">Konversi 3/4 ke bentuk desimal dan persen, serta hitung diskon baju seharga Rp100.000 dengan diskon 20%.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- UNIT 2A.6 -->
+            <div id="unit-2a-6" class="bg-white rounded-2xl shadow-xl border border-slate-200 p-8 space-y-6 scroll-mt-20">
+                <div class="flex justify-between items-center border-b pb-4">
+                    <h3 class="text-xl font-bold text-slate-900">Unit 2A.6: Pengukuran Lanjutan</h3>
+                    <div class="flex items-center space-x-2">
+                        <span class="bg-slate-100 text-slate-700 text-xs px-3 py-1 rounded-full font-semibold">Kelas 4–5</span>
+                        <a href="#daftar-isi" class="text-xs text-emerald-600 hover:underline bg-emerald-50 px-2 py-1 rounded">&uarr; Menu Utama</a>
+                    </div>
+                </div>
+                <div class="space-y-4 text-sm">
+                    <div class="bg-emerald-50 border-l-4 border-emerald-600 p-4 rounded-r-xl">
+                        <h4 class="font-bold text-emerald-900 mb-1">A. I DO</h4>
+                        <p class="text-emerald-800">Konversi satuan panjang, berat, waktu, luas, dan volume secara bermakna (pemahaman relasi antar satuan).</p>
+                    </div>
+                    <div class="bg-slate-50 border-l-4 border-slate-600 p-4 rounded-r-xl">
+                        <h4 class="font-bold text-slate-900">B. WE DO & C. YOU DO</h4>
+                        <p class="text-slate-700">Selesaikan konversi meter ke kilometer dan hitung selisih waktu perjalanan.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- UNIT 2A.7 -->
+            <div id="unit-2a-7" class="bg-white rounded-2xl shadow-xl border border-slate-200 p-8 space-y-6 scroll-mt-20">
+                <div class="flex justify-between items-center border-b pb-4">
+                    <h3 class="text-xl font-bold text-slate-900">Unit 2A.7: Geometri Bidang</h3>
+                    <div class="flex items-center space-x-2">
+                        <span class="bg-slate-100 text-slate-700 text-xs px-3 py-1 rounded-full font-semibold">Kelas 4–5</span>
+                        <a href="#daftar-isi" class="text-xs text-emerald-600 hover:underline bg-emerald-50 px-2 py-1 rounded">&uarr; Menu Utama</a>
+                    </div>
+                </div>
+                <div class="space-y-4 text-sm">
+                    <div class="bg-emerald-50 border-l-4 border-emerald-600 p-4 rounded-r-xl">
+                        <h4 class="font-bold text-emerald-900 mb-1">A. I DO</h4>
+                        <p class="text-emerald-800">Sifat bangun datar (persegi, persegi panjang, segitiga, jajargenjang, trapesium), keliling, dan luas.</p>
+                    </div>
+                    <div class="bg-slate-50 border-l-4 border-slate-600 p-4 rounded-r-xl">
+                        <h4 class="font-bold text-slate-900">B. WE DO & C. YOU DO</h4>
+                        <p class="text-slate-700">Hitung keliling dan luas bangun gabungan datar sederhana.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- UNIT 2A.8 -->
+            <div id="unit-2a-8" class="bg-white rounded-2xl shadow-xl border border-slate-200 p-8 space-y-6 scroll-mt-20">
+                <div class="flex justify-between items-center border-b pb-4">
+                    <h3 class="text-xl font-bold text-slate-900">Unit 2A.8: Geometri Ruang & Volume</h3>
+                    <div class="flex items-center space-x-2">
+                        <span class="bg-slate-100 text-slate-700 text-xs px-3 py-1 rounded-full font-semibold">Kelas 4–5</span>
+                        <a href="#daftar-isi" class="text-xs text-emerald-600 hover:underline bg-emerald-50 px-2 py-1 rounded">&uarr; Menu Utama</a>
+                    </div>
+                </div>
+                <div class="space-y-4 text-sm">
+                    <div class="bg-emerald-50 border-l-4 border-emerald-600 p-4 rounded-r-xl">
+                        <h4 class="font-bold text-emerald-900 mb-1">A. I DO</h4>
+                        <p class="text-emerald-800">Mengenal kubus, balok, jaring-jaring, dan perhitungan volume menggunakan kubus satuan.</p>
+                    </div>
+                    <div class="bg-slate-50 border-l-4 border-slate-600 p-4 rounded-r-xl">
+                        <h4 class="font-bold text-slate-900">B. WE DO & C. YOU DO</h4>
+                        <p class="text-slate-700">Hitung volume balok dengan panjang, lebar, dan tinggi tertentu.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- UNIT 2A.9 -->
+            <div id="unit-2a-9" class="bg-white rounded-2xl shadow-xl border border-slate-200 p-8 space-y-6 scroll-mt-20">
+                <div class="flex justify-between items-center border-b pb-4">
+                    <h3 class="text-xl font-bold text-slate-900">Unit 2A.9: Data & Penyajian Data</h3>
+                    <div class="flex items-center space-x-2">
+                        <span class="bg-slate-100 text-slate-700 text-xs px-3 py-1 rounded-full font-semibold">Kelas 4–5</span>
+                        <a href="#daftar-isi" class="text-xs text-emerald-600 hover:underline bg-emerald-50 px-2 py-1 rounded">&uarr; Menu Utama</a>
+                    </div>
+                </div>
+                <div class="space-y-4 text-sm">
+                    <div class="bg-emerald-50 border-l-4 border-emerald-600 p-4 rounded-r-xl">
+                        <h4 class="font-bold text-emerald-900 mb-1">A. I DO</h4>
+                        <p class="text-emerald-800">Membaca, menafsirkan, dan menyajikan data dalam bentuk tabel serta diagram batang.</p>
+                    </div>
+                    <div class="bg-slate-50 border-l-4 border-slate-600 p-4 rounded-r-xl">
+                        <h4 class="font-bold text-slate-900">B. WE DO & C. YOU DO</h4>
+                        <p class="text-slate-700">Jawab pertanyaan interpretasi berdasarkan diagram batang nilai ulangan siswa.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- UNIT 2A.10 -->
+            <div id="unit-2a-10" class="bg-white rounded-2xl shadow-xl border border-slate-200 p-8 space-y-6 scroll-mt-20">
+                <div class="flex justify-between items-center border-b pb-4">
+                    <h3 class="text-xl font-bold text-slate-900">Unit 2A.10: Soal Cerita & Problem Solving</h3>
+                    <div class="flex items-center space-x-2">
+                        <span class="bg-slate-100 text-slate-700 text-xs px-3 py-1 rounded-full font-semibold">Kelas 4–5</span>
+                        <a href="#daftar-isi" class="text-xs text-emerald-600 hover:underline bg-emerald-50 px-2 py-1 rounded">&uarr; Menu Utama</a>
+                    </div>
+                </div>
+                <div class="space-y-4 text-sm">
+                    <div class="bg-emerald-50 border-l-4 border-emerald-600 p-4 rounded-r-xl">
+                        <h4 class="font-bold text-emerald-900 mb-1">A. I DO</h4>
+                        <p class="text-emerald-800">Penerapan strategi 5 langkah (Pahami -> Rencanakan -> Hitung -> Periksa -> Jelaskan) untuk soal cerita multi-langkah.</p>
+                    </div>
+                    <div class="bg-slate-50 border-l-4 border-slate-600 p-4 rounded-r-xl">
+                        <h4 class="font-bold text-slate-900">B. WE DO & C. YOU DO</h4>
+                        <p class="text-slate-700">Selesaikan soal cerita kompleks dengan informasi dalam tabel.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- LEVEL 2B UNITS -->
+        <section class="space-y-8 pt-6">
+            <div class="bg-emerald-950 text-white p-6 rounded-2xl shadow-lg">
+                <span class="bg-emerald-700 px-3 py-1 rounded text-xs font-bold tracking-wider">LEVEL 2B</span>
+                <h2 class="text-2xl font-extrabold mt-2">Kelas 6 SD: Konsolidasi Konsep & Problem Solving Tingkat Lanjut</h2>
+                <p class="text-emerald-200 text-sm mt-1">Persiapan akhir SD: Rasio, Skala, Kecepatan, Debit, Geometri Gabungan, dan Penalaran Asesmen.</p>
+            </div>
+
+            <!-- UNIT 2B.1 -->
+            <div id="unit-2b-1" class="bg-white rounded-2xl shadow-xl border border-slate-200 p-8 space-y-6 scroll-mt-20">
+                <div class="flex justify-between items-center border-b pb-4">
+                    <h3 class="text-xl font-bold text-slate-900">Unit 2B.1: Konsolidasi Bilangan & Operasi</h3>
+                    <div class="flex items-center space-x-2">
+                        <span class="bg-emerald-100 text-emerald-800 text-xs px-3 py-1 rounded-full font-semibold">Kelas 6</span>
+                        <a href="#daftar-isi" class="text-xs text-emerald-600 hover:underline bg-emerald-50 px-2 py-1 rounded">&uarr; Menu Utama</a>
+                    </div>
+                </div>
+                <div class="space-y-4 text-sm">
+                    <div class="bg-emerald-50 border-l-4 border-emerald-600 p-4 rounded-r-xl">
+                        <h4 class="font-bold text-emerald-900 mb-1">A. I DO</h4>
+                        <p class="text-emerald-800">Penggabungan seluruh operasi bilangan besar, estimasi, dan pengecekan kewajaran jawaban multi-langkah.</p>
+                    </div>
+                    <div class="bg-slate-50 border-l-4 border-slate-600 p-4 rounded-r-xl">
+                        <h4 class="font-bold text-slate-900">B. WE DO & C. YOU DO</h4>
+                        <p class="text-slate-700">Latihan soal campuran dengan tingkat abstraksi tinggi.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- UNIT 2B.2 -->
+            <div id="unit-2b-2" class="bg-white rounded-2xl shadow-xl border border-slate-200 p-8 space-y-6 scroll-mt-20">
+                <div class="flex justify-between items-center border-b pb-4">
+                    <h3 class="text-xl font-bold text-slate-900">Unit 2B.2: Pecahan, Desimal, & Persen Lanjutan</h3>
+                    <div class="flex items-center space-x-2">
+                        <span class="bg-emerald-100 text-emerald-800 text-xs px-3 py-1 rounded-full font-semibold">Kelas 6</span>
+                        <a href="#daftar-isi" class="text-xs text-emerald-600 hover:underline bg-emerald-50 px-2 py-1 rounded">&uarr; Menu Utama</a>
+                    </div>
+                </div>
+                <div class="space-y-4 text-sm">
+                    <div class="bg-emerald-50 border-l-4 border-emerald-600 p-4 rounded-r-xl">
+                        <h4 class="font-bold text-emerald-900 mb-1">A. I DO</h4>
+                        <p class="text-emerald-800">Operasi gabungan pecahan, desimal, persen, diskon bertingkat, dan kenaikan/penurunan persentase.</p>
+                    </div>
+                    <div class="bg-slate-50 border-l-4 border-slate-600 p-4 rounded-r-xl">
+                        <h4 class="font-bold text-slate-900">B. WE DO & C. YOU DO</h4>
+                        <p class="text-slate-700">Hitung total belanja dengan diskon ganda (diskon 50% + 20%).</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- UNIT 2B.3 -->
+            <div id="unit-2b-3" class="bg-white rounded-2xl shadow-xl border border-slate-200 p-8 space-y-6 scroll-mt-20">
+                <div class="flex justify-between items-center border-b pb-4">
+                    <h3 class="text-xl font-bold text-slate-900">Unit 2B.3: FPB & KPK dalam Problem Solving</h3>
+                    <div class="flex items-center space-x-2">
+                        <span class="bg-emerald-100 text-emerald-800 text-xs px-3 py-1 rounded-full font-semibold">Kelas 6</span>
+                        <a href="#daftar-isi" class="text-xs text-emerald-600 hover:underline bg-emerald-50 px-2 py-1 rounded">&uarr; Menu Utama</a>
+                    </div>
+                </div>
+                <div class="space-y-4 text-sm">
+                    <div class="bg-emerald-50 border-l-4 border-emerald-600 p-4 rounded-r-xl">
+                        <h4 class="font-bold text-emerald-900 mb-1">A. I DO</h4>
+                        <p class="text-emerald-800">Menganalisis soal cerita untuk menentukan apakah suatu masalah memerlukan konsep FPB atau KPK secara mandiri.</p>
+                    </div>
+                    <div class="bg-slate-50 border-l-4 border-slate-600 p-4 rounded-r-xl">
+                        <h4 class="font-bold text-slate-900">B. WE DO & C. YOU DO</h4>
+                        <p class="text-slate-700">Pecahkan masalah pembagian bingkisan sembako terbanyak secara adil.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- UNIT 2B.4 -->
+            <div id="unit-2b-4" class="bg-white rounded-2xl shadow-xl border border-slate-200 p-8 space-y-6 scroll-mt-20">
+                <div class="flex justify-between items-center border-b pb-4">
+                    <h3 class="text-xl font-bold text-slate-900">Unit 2B.4: Perbandingan & Rasio</h3>
+                    <div class="flex items-center space-x-2">
+                        <span class="bg-emerald-100 text-emerald-800 text-xs px-3 py-1 rounded-full font-semibold">Kelas 6</span>
+                        <a href="#daftar-isi" class="text-xs text-emerald-600 hover:underline bg-emerald-50 px-2 py-1 rounded">&uarr; Menu Utama</a>
+                    </div>
+                </div>
+                <div class="space-y-4 text-sm">
+                    <div class="bg-emerald-50 border-l-4 border-emerald-600 p-4 rounded-r-xl">
+                        <h4 class="font-bold text-emerald-900 mb-1">A. I DO</h4>
+                        <p class="text-emerald-800">Konsep rasio, perbandingan senilai, dan penyederhanaan perbandingan dalam resep atau campuran.</p>
+                    </div>
+                    <div class="bg-slate-50 border-l-4 border-slate-600 p-4 rounded-r-xl">
+                        <h4 class="font-bold text-slate-900">B. WE DO & C. YOU DO</h4>
+                        <p class="text-slate-700">Tentukan jumlah uang Ani jika perbandingan uang Ani dan Budi 3:5 dan total uang mereka Rp80.000.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- UNIT 2B.5 -->
+            <div id="unit-2b-5" class="bg-white rounded-2xl shadow-xl border border-slate-200 p-8 space-y-6 scroll-mt-20">
+                <div class="flex justify-between items-center border-b pb-4">
+                    <h3 class="text-xl font-bold text-slate-900">Unit 2B.5: Skala & Denah</h3>
+                    <div class="flex items-center space-x-2">
+                        <span class="bg-emerald-100 text-emerald-800 text-xs px-3 py-1 rounded-full font-semibold">Kelas 6</span>
+                        <a href="#daftar-isi" class="text-xs text-emerald-600 hover:underline bg-emerald-50 px-2 py-1 rounded">&uarr; Menu Utama</a>
+                    </div>
+                </div>
+                <div class="space-y-4 text-sm">
+                    <div class="bg-emerald-50 border-l-4 border-emerald-600 p-4 rounded-r-xl">
+                        <h4 class="font-bold text-emerald-900 mb-1">A. I DO</h4>
+                        <p class="text-emerald-800">Memahami konsep skala, menghitung jarak pada peta, denah, dan jarak sebenarnya secara proporsional.</p>
+                    </div>
+                    <div class="bg-slate-50 border-l-4 border-slate-600 p-4 rounded-r-xl">
+                        <h4 class="font-bold text-slate-900">B. WE DO & C. YOU DO</h4>
+                        <p class="text-slate-700">Hitung jarak sebenarnya jika skala peta 1:500.000 dan jarak pada peta 6 cm.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- UNIT 2B.6 -->
+            <div id="unit-2b-6" class="bg-white rounded-2xl shadow-xl border border-slate-200 p-8 space-y-6 scroll-mt-20">
+                <div class="flex justify-between items-center border-b pb-4">
+                    <h3 class="text-xl font-bold text-slate-900">Unit 2B.6: Kecepatan & Debit</h3>
+                    <div class="flex items-center space-x-2">
+                        <span class="bg-emerald-100 text-emerald-800 text-xs px-3 py-1 rounded-full font-semibold">Kelas 6</span>
+                        <a href="#daftar-isi" class="text-xs text-emerald-600 hover:underline bg-emerald-50 px-2 py-1 rounded">&uarr; Menu Utama</a>
+                    </div>
+                </div>
+                <div class="space-y-4 text-sm">
+                    <div class="bg-emerald-50 border-l-4 border-emerald-600 p-4 rounded-r-xl">
+                        <h4 class="font-bold text-emerald-900 mb-1">A. I DO</h4>
+                        <p class="text-emerald-800">Menghubungkan Jarak – Waktu – Kecepatan dan Volume – Waktu – Debit tanpa sekadar menghafal rumus segitiga ajaib.</p>
+                    </div>
+                    <div class="bg-slate-50 border-l-4 border-slate-600 p-4 rounded-r-xl">
+                        <h4 class="font-bold text-slate-900">B. WE DO & C. YOU DO</h4>
+                        <p class="text-slate-700">Hitung waktu tiba perjalanan mobil dengan jarak 150 km dan kecepatan 60 km/jam.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- UNIT 2B.7 -->
+            <div id="unit-2b-7" class="bg-white rounded-2xl shadow-xl border border-slate-200 p-8 space-y-6 scroll-mt-20">
+                <div class="flex justify-between items-center border-b pb-4">
+                    <h3 class="text-xl font-bold text-slate-900">Unit 2B.7: Geometri Bidang & Luas Gabungan</h3>
+                    <div class="flex items-center space-x-2">
+                        <span class="bg-emerald-100 text-emerald-800 text-xs px-3 py-1 rounded-full font-semibold">Kelas 6</span>
+                        <a href="#daftar-isi" class="text-xs text-emerald-600 hover:underline bg-emerald-50 px-2 py-1 rounded">&uarr; Menu Utama</a>
+                    </div>
+                </div>
+                <div class="space-y-4 text-sm">
+                    <div class="bg-emerald-50 border-l-4 border-emerald-600 p-4 rounded-r-xl">
+                        <h4 class="font-bold text-emerald-900 mb-1">A. I DO</h4>
+                        <p class="text-emerald-800">Menghitung keliling dan luas gabungan bangun datar (termasuk lingkaran) yang tidak langsung masuk dalam satu rumus.</p>
+                    </div>
+                    <div class="bg-slate-50 border-l-4 border-slate-600 p-4 rounded-r-xl">
+                        <h4 class="font-bold text-slate-900">B. WE DO & C. YOU DO</h4>
+                        <p class="text-slate-700">Hitung luas bangun gabungan persegi dan setengah lingkaran.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- UNIT 2B.8 -->
+            <div id="unit-2b-8" class="bg-white rounded-2xl shadow-xl border border-slate-200 p-8 space-y-6 scroll-mt-20">
+                <div class="flex justify-between items-center border-b pb-4">
+                    <h3 class="text-xl font-bold text-slate-900">Unit 2B.8: Bangun Ruang & Volume Kompleks</h3>
+                    <div class="flex items-center space-x-2">
+                        <span class="bg-emerald-100 text-emerald-800 text-xs px-3 py-1 rounded-full font-semibold">Kelas 6</span>
+                        <a href="#daftar-isi" class="text-xs text-emerald-600 hover:underline bg-emerald-50 px-2 py-1 rounded">&uarr; Menu Utama</a>
+                    </div>
+                </div>
+                <div class="space-y-4 text-sm">
+                    <div class="bg-emerald-50 border-l-4 border-emerald-600 p-4 rounded-r-xl">
+                        <h4 class="font-bold text-emerald-900 mb-1">A. I DO</h4>
+                        <p class="text-emerald-800">Menghitung volume prisma, tabung, kerucut, dan bola serta gabungan bangun ruang kontekstual.</p>
+                    </div>
+                    <div class="bg-slate-50 border-l-4 border-slate-600 p-4 rounded-r-xl">
+                        <h4 class="font-bold text-slate-900">B. WE DO & C. YOU DO</h4>
+                        <p class="text-slate-700">Hitung volume tabung dengan jari-jari 7 cm dan tinggi 10 cm.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- UNIT 2B.9 -->
+            <div id="unit-2b-9" class="bg-white rounded-2xl shadow-xl border border-slate-200 p-8 space-y-6 scroll-mt-20">
+                <div class="flex justify-between items-center border-b pb-4">
+                    <h3 class="text-xl font-bold text-slate-900">Unit 2B.9: Data & Statistika Dasar</h3>
+                    <div class="flex items-center space-x-2">
+                        <span class="bg-emerald-100 text-emerald-800 text-xs px-3 py-1 rounded-full font-semibold">Kelas 6</span>
+                        <a href="#daftar-isi" class="text-xs text-emerald-600 hover:underline bg-emerald-50 px-2 py-1 rounded">&uarr; Menu Utama</a>
+                    </div>
+                </div>
+                <div class="space-y-4 text-sm">
+                    <div class="bg-emerald-50 border-l-4 border-emerald-600 p-4 rounded-r-xl">
+                        <h4 class="font-bold text-emerald-900 mb-1">A. I DO</h4>
+                        <p class="text-emerald-800">Mencari mean (rata-rata), median, modus, dan menafsirkan informasi dari diagram lingkaran.</p>
+                    </div>
+                    <div class="bg-slate-50 border-l-4 border-slate-600 p-4 rounded-r-xl">
+                        <h4 class="font-bold text-slate-900">B. WE DO & C. YOU DO</h4>
+                        <p class="text-slate-700">Hitung nilai rata-rata ulangan matematika dari data frekuensi yang diberikan.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- UNIT 2B.10 -->
+            <div id="unit-2b-10" class="bg-white rounded-2xl shadow-xl border border-slate-200 p-8 space-y-6 scroll-mt-20">
+                <div class="flex justify-between items-center border-b pb-4">
+                    <h3 class="text-xl font-bold text-slate-900">Unit 2B.10: Koordinat & Representasi Visual</h3>
+                    <div class="flex items-center space-x-2">
+                        <span class="bg-emerald-100 text-emerald-800 text-xs px-3 py-1 rounded-full font-semibold">Kelas 6</span>
+                        <a href="#daftar-isi" class="text-xs text-emerald-600 hover:underline bg-emerald-50 px-2 py-1 rounded">&uarr; Menu Utama</a>
+                    </div>
+                </div>
+                <div class="space-y-4 text-sm">
+                    <div class="bg-emerald-50 border-l-4 border-emerald-600 p-4 rounded-r-xl">
+                        <h4 class="font-bold text-emerald-900 mb-1">A. I DO</h4>
+                        <p class="text-emerald-800">Membaca posisi titik pada bidang koordinat Cartesius kuadran I dan menentukan perpindahan posisi.</p>
+                    </div>
+                    <div class="bg-slate-50 border-l-4 border-slate-600 p-4 rounded-r-xl">
+                        <h4 class="font-bold text-slate-900">B. WE DO & C. YOU DO</h4>
+                        <p class="text-slate-700">Tentukan koordinat titik sudut bangun datar pada bidang grid.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- UNIT 2B.11 -->
+            <div id="unit-2b-11" class="bg-white rounded-2xl shadow-xl border border-slate-200 p-8 space-y-6 scroll-mt-20">
+                <div class="flex justify-between items-center border-b pb-4">
+                    <h3 class="text-xl font-bold text-slate-900">Unit 2B.11: Problem Solving Multi-Langkah</h3>
+                    <div class="flex items-center space-x-2">
+                        <span class="bg-emerald-100 text-emerald-800 text-xs px-3 py-1 rounded-full font-semibold">Kelas 6</span>
+                        <a href="#daftar-isi" class="text-xs text-emerald-600 hover:underline bg-emerald-50 px-2 py-1 rounded">&uarr; Menu Utama</a>
+                    </div>
+                </div>
+                <div class="space-y-4 text-sm">
+                    <div class="bg-emerald-50 border-l-4 border-emerald-600 p-4 rounded-r-xl">
+                        <h4 class="font-bold text-emerald-900 mb-1">A. I DO</h4>
+                        <p class="text-emerald-800">Menyelesaikan soal kompleks yang menggabungkan operasi pecahan, perbandingan, kecepatan, dan geometri secara terpadu.</p>
+                    </div>
+                    <div class="bg-slate-50 border-l-4 border-slate-600 p-4 rounded-r-xl">
+                        <h4 class="font-bold text-slate-900">B. WE DO & C. YOU DO</h4>
+                        <p class="text-slate-700">Selesaikan studi kasus masalah gabungan konversi debit dan volume.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- UNIT 2B.12 -->
+            <div id="unit-2b-12" class="bg-white rounded-2xl shadow-xl border border-slate-200 p-8 space-y-6 scroll-mt-20">
+                <div class="flex justify-between items-center border-b pb-4">
+                    <h3 class="text-xl font-bold text-slate-900">Unit 2B.12: Review & Persiapan Asesmen / TKA</h3>
+                    <div class="flex items-center space-x-2">
+                        <span class="bg-emerald-100 text-emerald-800 text-xs px-3 py-1 rounded-full font-semibold">Kelas 6</span>
+                        <a href="#daftar-isi" class="text-xs text-emerald-600 hover:underline bg-emerald-50 px-2 py-1 rounded">&uarr; Menu Utama</a>
+                    </div>
+                </div>
+                <div class="space-y-4 text-sm">
+                    <div class="bg-emerald-50 border-l-4 border-emerald-600 p-4 rounded-r-xl">
+                        <h4 class="font-bold text-emerald-900 mb-1">A. I DO</h4>
+                        <p class="text-emerald-800">Konsolidasi akhir, latihan campuran HOTS, analisis kesalahan, dan manajemen waktu menghadapi asesmen.</p>
+                    </div>
+                    <div class="bg-slate-50 border-l-4 border-slate-600 p-4 rounded-r-xl">
+                        <h4 class="font-bold text-slate-900">B. WE DO & C. YOU DO</h4>
+                        <p class="text-slate-700">Simulasi paket soal penalaran tingkat lanjut ala TKA/Asesmen Nasional.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EVALUASI & PETA PENGUASAAN -->
+        <section id="evaluasi" class="bg-white rounded-2xl shadow-xl border border-slate-200 p-8 md:p-12 space-y-6 page-break scroll-mt-20">
+            <div class="flex justify-between items-center border-b pb-3">
+                <h3 class="text-2xl font-bold text-slate-900">Evaluasi & Peta Penguasaan Siswa (Level 2)</h3>
+                <a href="#daftar-isi" class="text-xs text-emerald-600 hover:underline bg-emerald-50 px-2 py-1 rounded">&uarr; Menu Utama</a>
+            </div>
+            <p class="text-sm text-slate-600">Gunakan rubrik pemetaan ini untuk memantau perkembangan siswa kelas atas di Dywan Learning Center[cite: 2]:</p>
+            
+            <div class="overflow-x-auto">
+                <table class="w-full text-left border-collapse text-sm">
+                    <thead>
+                        <tr class="bg-slate-100 border-b">
+                            <th class="p-3">Kompetensi Utama (Kelas Atas)</th>
+                            <th class="p-3 text-center">Belum</th>
+                            <th class="p-3 text-center">Berkembang</th>
+                            <th class="p-3 text-center">Menguasai</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-200 text-slate-700">
+                        <tr>
+                            <td class="p-3 font-medium">Operasi Hitung Lanjut & Porogapit</td>
+                            <td class="p-3 text-center"><input type="checkbox"></td>
+                            <td class="p-3 text-center"><input type="checkbox"></td>
+                            <td class="p-3 text-center"><input type="checkbox"></td>
+                        </tr>
+                        <tr>
+                            <td class="p-3 font-medium">Faktor, Kelipatan, FPB, & KPK</td>
+                            <td class="p-3 text-center"><input type="checkbox"></td>
+                            <td class="p-3 text-center"><input type="checkbox"></td>
+                            <td class="p-3 text-center"><input type="checkbox"></td>
+                        </tr>
+                        <tr>
+                            <td class="p-3 font-medium">Pecahan, Desimal, & Persen</td>
+                            <td class="p-3 text-center"><input type="checkbox"></td>
+                            <td class="p-3 text-center"><input type="checkbox"></td>
+                            <td class="p-3 text-center"><input type="checkbox"></td>
+                        </tr>
+                        <tr>
+                            <td class="p-3 font-medium">Skala, Perbandingan, Kecepatan, & Debit</td>
+                            <td class="p-3 text-center"><input type="checkbox"></td>
+                            <td class="p-3 text-center"><input type="checkbox"></td>
+                            <td class="p-3 text-center"><input type="checkbox"></td>
+                        </tr>
+                        <tr>
+                            <td class="p-3 font-medium">Geometri Luas/Volume & Problem Solving Multi-Langkah</td>
+                            <td class="p-3 text-center"><input type="checkbox"></td>
+                            <td class="p-3 text-center"><input type="checkbox"></td>
+                            <td class="p-3 text-center"><input type="checkbox"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="pt-6 border-t grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+                <div class="bg-slate-50 p-4 rounded-xl border border-slate-200">
+                    <p class="font-bold text-slate-900 mb-2">Catatan Perkembangan Siswa:</p>
+                    <div class="h-20 border border-dashed border-slate-300 rounded bg-white p-2 text-xs text-slate-400">Tulis catatan evaluasi mentor di sini...</div>
+                </div>
+                <div class="bg-slate-50 p-4 rounded-xl border border-slate-200">
+                    <p class="font-bold text-slate-900 mb-2">Paraf Mentor / Pengajar:</p>
+                    <div class="h-20 flex items-end justify-between px-4 pb-2 text-xs text-slate-500">
+                        <span>( ............................ )</span>
+                        <span>Tanggal: ....................</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="no-print text-center py-8 text-xs text-slate-500 border-t mt-12 bg-white flex justify-center items-center space-x-4">
+        <p>Dywan Learning Center (Kedungjati) &copy; 2026 — Master Modul Matematika Level 2 (Kelas Atas)</p>
+        <a href="#atas" class="text-emerald-600 font-semibold hover:underline">&uarr; Kembali ke Atas</a>
+    </footer>
+
+</body>
+</html>
